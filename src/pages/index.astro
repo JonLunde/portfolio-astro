@@ -17,13 +17,21 @@ import mail from '../assets/mail.svg';
             Hey, my name is
             <span class="text-gradient">Jon!</span>
           </h1>
+          <div class="lg:hidden self-center">
+            <Image
+              src={portraitImage}
+              alt="A picture of me! Jon!"
+              width={300}
+              height={300}
+            />
+          </div>
           <h2>
             I'm a web developer currently living in Oslo, Norway.
             <br />
-            I work for Buypass where I develop iSonen.no the platform for hosting
+            I work at Buypass where I develop iSonen.no the platform for hosting
             and attending sport events in Norway.
             <br /><br />
-            I specialice in <span class="text-[#149eca] font-semibold"
+            I specialize in <span class="text-[#149eca] font-semibold"
               >React</span
             >,
             <span class="text-[#3178C6] font-semibold">Typescript</span>, <span
@@ -32,9 +40,11 @@ import mail from '../assets/mail.svg';
             and <span class="text-[#F6009B] font-semibold">GraphQL</span>
           </h2>
         </div>
-        <Image src={portraitImage} alt="A picture of me! Jon!" />
+        <div class="max-lg:hidden">
+          <Image src={portraitImage} alt="A picture of me! Jon!" />
+        </div>
       </div>
-      <div class="flex gap-8 mt-10">
+      <div class="flex gap-8 mt-14">
         <a
           id="linkedin"
           href="https://www.linkedin.com/in/jon-lunde/"
